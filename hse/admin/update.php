@@ -25,7 +25,7 @@
     
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
-    <link href="../styles//styles.css" rel="stylesheet">
+    <link href="../styles/styles.css" rel="stylesheet">
     <link href="../styles/reset.css" rel="stylesheet">
     
 </head>
