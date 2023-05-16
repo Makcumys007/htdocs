@@ -42,8 +42,8 @@
         <meta charset="utf-8">
         <title>SafetyBoard</title>
         <meta http-equiv="Refresh" content="3600" />
-        <link href="styles.css" rel="stylesheet">
-        <link href="reset.css" rel="stylesheet">
+        <link href="styles/styles.css" rel="stylesheet">
+        <link href="styles/reset.css" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
         <script>
             const today = new Date().toLocaleDateString();
@@ -57,12 +57,12 @@
         <div id="wrapper">
             <!-- Шапка -->
         <div id="header">
-            <div id="logo"><img height="100" src="logo.png"></div>
+            <div id="logo"><img height="100" src="images/logo.png"></div>
             <div id="descr"><h2>ЕҚ, ӨҚ БОЙЫНША АҚПАРАТТЫҚ КЕСТЕ <br>
 ИНФОРМАЦИОННАЯ ДОСКА ПО ОТ И ПБ <br>
 HEALTH AND SAFETY BOARD
 </h2></div>
-            <div id="logo2"><img height="100" src="logo2.png"></div>
+            <div id="logo2"><img height="100" src="images/logo2.png"></div>
         </div>
         <!-- Таблица -->
         <div id="statistic">
