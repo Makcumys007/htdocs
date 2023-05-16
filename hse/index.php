@@ -41,6 +41,7 @@
     <head>
         <meta charset="utf-8">
         <title>SafetyBoard</title>
+        <meta http-equiv="Refresh" content="3600" />
         <link href="styles.css" rel="stylesheet">
         <link href="reset.css" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -192,8 +193,7 @@ HEALTH AND SAFETY BOARD
                 <video  controls 
                           preload="auto" 
                           data-setup="{}"
-                          autoplay="autoplay"
-                          muted 
+                          autoplay="autoplay"                          
                           loop>
                     <source src="<?php echo $file_3; ?>" type="video/mp4">
                 </video>
