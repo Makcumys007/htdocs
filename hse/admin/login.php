@@ -9,7 +9,7 @@
 	<meta charset="utf-8" />
 	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     
-	<title>Обновление HSE Board</title>
+	<title>HSE Board Login</title>
     
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
@@ -33,10 +33,20 @@
             <?php 
                 if(isset($_GET['error_auth'])) {
                     echo "<p>".$_GET['error_auth']."</p>";
+                } 
+                elseif (isset($_GET['log_in'])) {                     
+                    echo "<p id=\"auth\"></p>";
                 } else {
                     echo "<br>";
                 }
             ?>
+            <script type="text/javascript">
+                var href = document.location.href;
+                if(href.includes("false")) {
+                    document.getElementById('auth').innerHTML = "Сначала авторизуйтесь!";
+                }    
+
+            </script>
             <input type="submit" name="submit" value="Войти">
 
         </form>

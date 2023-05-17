@@ -193,7 +193,7 @@ body {
     background: rgba(255, 255, 255, 0.5);
 }
 #login label {
-    padding-left: 40px;
+    padding-left: 40px;    
 }
 
 #login input {
@@ -202,4 +202,5 @@ body {
 
 #login p {
    padding-left: 40px; 
+   color: red;
 }

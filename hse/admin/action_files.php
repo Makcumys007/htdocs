@@ -38,23 +38,37 @@
         return trim($link);
     }
 
-   $file_1 = uploadFiles("file_1");
-   $file_2 = uploadFiles("file_2");
-   $file_3 = uploadFile("file_3");
-   $file_4 = uploadFiles("file_4");
 
-   mysqli_query($connection, "
+   session_start();
 
-INSERT INTO `files_urls`(`file_1`,`file_2`,`file_3`,`file_4`)
-VALUES
-(
-'$file_1',
-'$file_2',
-'$file_3',
-'$file_4');
+    if($_SESSION['login_user']) { 
+
+       $file_1 = uploadFiles("file_1");
+       $file_2 = uploadFiles("file_2");
+       $file_3 = uploadFile("file_3");
+       $file_4 = uploadFiles("file_4");
+
+       mysqli_query($connection, "
+
+    INSERT INTO `files_urls`(`file_1`,`file_2`,`file_3`,`file_4`)
+    VALUES
+    (
+    '$file_1',
+    '$file_2',
+    '$file_3',
+    '$file_4');
 
 
-");
+    ");
+
+       } else {
+        header("Location: login.php?log_in=false");
+    }
+
+
+   
+   
+?>
 
 
 
