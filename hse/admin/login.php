@@ -1,11 +1,4 @@
-<?php 
-    
-    include 'connection.php';
 
-   $result = mysqli_query($connection, "SELECT * FROM hse_info ORDER BY id DESC LIMIT 1;");
-   
-   
-    ?>
 
 
 <!DOCTYPE html>
@@ -28,7 +21,7 @@
 <body>
 <div id="wrapper">
     <div id="login">
-        <form method="post" action="">
+        <form method="post" action="action_authentication.php">
             <label>Логин:</label>
             <br>
             <input type="text" name="login">
@@ -36,7 +29,14 @@
             <label>Пароль:</label>
             <br>
             <input type="password" name="password">
-            <br><br>
+            <br>
+            <?php 
+                if(isset($_GET['error_auth'])) {
+                    echo "<p>".$_GET['error_auth']."</p>";
+                } else {
+                    echo "<br>";
+                }
+            ?>
             <input type="submit" name="submit" value="Войти">
 
         </form>

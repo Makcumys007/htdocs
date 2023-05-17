@@ -186,16 +186,20 @@ body {
     position: fixed; /* or absolute */
     top: 50%;
     left: 50%;
-    width: 220px;
-    height:160px;
-    margin: -80px 0 0 -110px;
+    width: 300px;
+    height:200px;
+    margin: -100px 0 0 -150px;
     outline: red solid 0px;
     background: rgba(255, 255, 255, 0.5);
 }
 #login label {
-    padding-left: 20px;
+    padding-left: 40px;
 }
 
 #login input {
-    margin-left: 10px;
+    margin-left: 40px;
+}
+
+#login p {
+   padding-left: 40px; 
 }
