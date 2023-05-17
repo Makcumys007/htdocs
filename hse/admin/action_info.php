@@ -31,6 +31,8 @@
         mysqli_query($connection, "INSERT INTO `hse_board`.`hse_info`(`lti`,`mtc`,`fac`,`lti_fi`,`smf`,`date`)
         VALUES ('$lti','$mtc','$fac','$lti_fi','$smf','$date');");
 
+            header("Location: update.php?update=true");
+
     
     } else {
             header("Location: login.php?log_in=false");

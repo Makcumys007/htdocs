@@ -22,6 +22,19 @@ echo "<!DOCTYPE html>
     <!--[if lt IE 9]><script src=\"http://html5shiv.googlecode.com/svn/trunk/html5.js\"></script><![endif]-->
     
     <title>Обновление HSE Board</title>
+
+    <script type=\"text/javascript\">
+                var href = document.location.href;
+                if(href.includes(\"update=true\")) {
+                    alert('Информация обновлена!');
+                }   
+
+                var href = document.location.href;
+                if(href.includes(\"upload=true\")) {
+                    alert('Файлы загружены!');
+                }   
+
+            </script>
     
     <meta name=\"keywords\" content=\" \"/>
     <meta name=\"description\" content=\" \"/>

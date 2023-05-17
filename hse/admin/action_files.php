@@ -61,6 +61,8 @@
 
     ");
 
+       header("Location: update.php?upload=true");
+
        } else {
         header("Location: login.php?log_in=false");
     }
@@ -80,8 +82,3 @@
     
 
 
-
-
-    
-
-?>
