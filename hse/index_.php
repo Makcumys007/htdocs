@@ -44,14 +44,18 @@
         <meta http-equiv="Refresh" content="3600" />
         
 
-        <link id="style" href="styles/styles1680.css" rel="stylesheet">
+        <link id="style" href="" rel="stylesheet">
         <script type="text/javascript">
     
         var height = window.screen.height;
         var width = window.screen.width;
         var style = document.getElementById("style");
+        
         if (width == 1536) {            
             style.setAttribute("href", "styles/styles1536.css");            
+        } else if(width == 1440) {
+            style.setAttribute("href", "styles/styles1440.css");  
+            
         } else if(width == 1680) {
             style.setAttribute("href", "styles/styles1680.css");  
         }  else {
@@ -72,16 +76,16 @@
         <div id="wrapper">
             <!-- Шапка -->
         <div id="header">
-            <div id="logo"><img height="100" src="images/logo.png"></div>
+            <div id="logo"><img src="images/logo.png"></div>
             <div id="descr"><h2>ЕҚ, ӨҚ БОЙЫНША АҚПАРАТТЫҚ КЕСТЕ <br>
 ИНФОРМАЦИОННАЯ ДОСКА ПО ОТ И ПБ <br>
 HEALTH AND SAFETY BOARD
 </h2></div>
-            <div id="logo2"><img height="100" src="images/logo2.png"></div>
+            <div id="logo2"><img src="images/logo2.png"></div>
         </div>
         <!-- Таблица -->
         <div id="statistic">
-            <br>
+           
             <table>
               <tr>
                 <td class="num_w"><h1><?php echo $lti;?></h1></td>

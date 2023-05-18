@@ -32,6 +32,7 @@ body {
 
 #logo img {
         padding-left: 100px;
+        height: 100px;
 }
 
 #descr {
@@ -51,6 +52,9 @@ body {
     outline: green solid 0px;
 }
 
+#logo2 img {
+     height: 100px;
+}
 
 #statistic {
     
