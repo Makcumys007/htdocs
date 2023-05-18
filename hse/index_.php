@@ -42,7 +42,22 @@
         <meta charset="utf-8">
         <title>SafetyBoard</title>
         <meta http-equiv="Refresh" content="3600" />
-        <link href="styles/styles1536.css" rel="stylesheet">
+        
+
+        <link id="style" href="styles/styles1680.css" rel="stylesheet">
+        <script type="text/javascript">
+    
+        var height = window.screen.height;
+        var width = window.screen.width;
+        var style = document.getElementById("style");
+        if (width == 1536) {            
+            style.setAttribute("href", "styles/styles1536.css");            
+        } else if(width == 1680) {
+            style.setAttribute("href", "styles/styles1680.css");  
+        }  else {
+            style.setAttribute("href", "styles/styles.css");
+        }      
+        </script>
         <link href="styles/reset.css" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
         <script>
