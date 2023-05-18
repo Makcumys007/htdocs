@@ -40,6 +40,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+
         <title>SafetyBoard</title>
         <meta http-equiv="Refresh" content="3600" />
         <link href="styles/styles.css" rel="stylesheet">
@@ -66,7 +67,6 @@ HEALTH AND SAFETY BOARD
         </div>
         <!-- Таблица -->
         <div id="statistic">
-            <br>
             <table>
               <tr>
                 <td class="num_w"><h1><?php echo $lti;?></h1></td>
@@ -203,7 +203,7 @@ HEALTH AND SAFETY BOARD
                 
             <?php  
             if(str_contains($file_4, " ")) {
-                echo str_contains($file_4, " ");
+                
                 $file_4 = explode(" ", $file_4);
                 foreach ($file_4 as $value) {
                     echo "<div class=\"blockC fade\">  
@@ -250,7 +250,9 @@ HEALTH AND SAFETY BOARD
             </div>
         </div>
         </div> 
-
+        <script type="text/javascript">
+            
+        </script>
         
         
     </body>
