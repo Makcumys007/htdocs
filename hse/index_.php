@@ -222,7 +222,7 @@ HEALTH AND SAFETY BOARD
                 
             <?php  
             if(str_contains($file_4, " ")) {
-                echo str_contains($file_4, " ");
+                
                 $file_4 = explode(" ", $file_4);
                 foreach ($file_4 as $value) {
                     echo "<div class=\"blockC fade\">  

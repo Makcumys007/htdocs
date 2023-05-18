@@ -31,7 +31,7 @@ body {
 }
 
 #logo img {
-        padding-left: 100px;
+        padding-left: 0px;
         height: 80px;
 }
 
@@ -135,7 +135,7 @@ body {
 
 #left img {
     width: 100%;
-    height: 250px;
+    height: 240px;
     margin-top: 20px;
   /*  padding: 10px 10px 10px 10px; */
     border: #024779 solid 5px;
@@ -148,7 +148,7 @@ body {
 
 #center video {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 50px;
     border: #024779 solid 5px;
     
 }
