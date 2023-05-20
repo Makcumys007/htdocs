@@ -72,21 +72,21 @@ echo "<!DOCTYPE html>
     </form>
     <br>
     <img src=\"../images/example.png\" style=\"width: 25%;\">
-    <form action=\"action_files.php\" method=\"post\" enctype=\"multipart/form-data\">
+    <form id=\"files\" action=\"action_files.php\" method=\"post\" enctype=\"multipart/form-data\">
 
-        <label>Блок №1 (Картинки)<samp> 440x340</samp></label>
+        <label>Блок №1 (Картинки)<samp>*.jpg 440x340</samp></label>
         <br>
         <input type=\"file\" name=\"file_1[]\" multiple >
         <br>
-        <label>Блок №2 (Картинки) <samp> 440x340</samp></label>
+        <label>Блок №2 (Картинки) <samp>*.jpg 440x340</samp></label>
         <br>
         <input type=\"file\" name=\"file_2[]\" multiple>
         <br>
-        <label>Блок №3 (Видео) <samp> *.mp4</samp></label>
+        <label>Блок №3 (Видео) <samp> *.mp4 300Mb</samp></label>
         <br>
         <input type=\"file\" name=\"file_3\">
         <br>
-        <label>Блок №4 (Картинки) <samp> 440x700</samp></label>
+        <label>Блок №4 (Картинки) <samp>*.jpg 440x700</samp></label>
         <br>
         <input type=\"file\" name=\"file_4[]\" multiple> 
         <br>

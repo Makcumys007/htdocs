@@ -7,6 +7,7 @@ body {
     height:744px;
     background-image: url("../images/kazminbgr1536.png");     
     background-repeat: no-repeat;
+    background-color: white;
 }
 
 #wrapper {

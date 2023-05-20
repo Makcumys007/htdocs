@@ -192,12 +192,7 @@ HEALTH AND SAFETY BOARD
 
                 <video id="video" controls loop autoplay muted>
                     <source src="<?php echo $file_3; ?>" type="video/mp4">
-                </video>
-                <script type="text/javascript">
-                    var video = document.getElementById("video");
-                    video.autoplay = true;
-                    video.load();
-                </script>
+                </video>              
             </div>
             <div id="right">
                 
