@@ -3,9 +3,9 @@
 
 
 body {
-    width: 1436px;
-    height:700px;   /* было 744px; */
-    background-image: url("../images/kazminbgr1536.png");     
+    width: 1600px;
+    height:900px;   /* было 744px; */
+    background-image: url("../images/kazminbgr1680.png");     
     background-repeat: no-repeat;
     background-color: white;
 }
@@ -14,9 +14,9 @@ body {
     position: fixed; /* or absolute */
     top: 50%;
     left: 50%;
-    width: 1436px;
-    height:744px;
-    margin: -372px 0 0 -718px;
+    width: 1600px;
+    height:950px;
+    margin: -400px 0 0 -800px;
     outline: red solid 0px;
 }
 
@@ -37,7 +37,7 @@ body {
 }
 
 #descr {
-    width: 574px;    
+    width: 700px;    
     float: left;
     outline: green solid 0px;
 }
@@ -48,7 +48,7 @@ body {
 }
 
 #logo2 {
-    width: 460px;       
+    width: 500px;       
     float: left;
     outline: green solid 0px;
 } 
@@ -119,12 +119,12 @@ body {
 
 
 #info {
-    height: 470px;                  /* 470 */
+    height: 550px;                  /* 470 */
     outline: purple solid 0px;
 }
 
 #left {
-    width: 355px;
+    width: 390px;
     float: left;
     margin-right: 5px ;
 }
@@ -138,13 +138,13 @@ body {
 
 #left img {
     width: 100%;
-    height: 232px;
+    height: 270px;
     margin-top: 8px;
   /*  padding: 10px 10px 10px 10px; */
     border: #024779 solid 5px;
 }
 #center {
-    width: 704px;       
+    width: 800px;       
     float: left;
     margin: 5px 5px 5px 5px;
 }
@@ -158,7 +158,7 @@ body {
 
 #right {
     float: left;
-    width: 355px;
+    width: 390px;
     margin-left: 5px;
 }
 
@@ -171,7 +171,7 @@ body {
 
 #right img {
     width: 100%;
-    height: 470px;
+    height: 545px;
     margin-top: 8px;
    /* padding: 10px 10px 10px 10px; */
     border: #024779 solid 5px;
