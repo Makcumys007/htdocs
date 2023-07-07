@@ -147,6 +147,7 @@ body {
     width: 890px;           /* 49.4% */ 
     float: left;
     margin: 5px 5px 5px 5px;
+    outline: 0px solid red;
 }
 
 #center video {
@@ -216,4 +217,44 @@ body {
 
 #files samp {
     color: white;
+}
+
+
+
+/* ----------------- Weather ------------------*/
+
+#weather {
+    height: 65px;
+    outline: orange solid 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+   /* background: rgba(255, 255, 255, 0.5); */
+
+
+    width: 100%;
+  
+}
+
+#weather table {
+    float: right;
+}
+
+
+
+.background_wthr {
+    outline: green solid 0px;    
+    background-color: white;
+}
+
+.background_wthr img {
+    padding-left: 10px;
+}
+
+.background_wthr h1 {
+    text-align: center;
+    font-size: 180%;  
+    padding-left: 10px;
+    padding-right: 10px;
+    color: red;
+  /*  color: #024779;*/
 }
