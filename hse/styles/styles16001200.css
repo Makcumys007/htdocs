@@ -151,7 +151,7 @@ body {
 
 #center video {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 10px;
     border: #024779 solid 5px;
     
 }
@@ -209,4 +209,37 @@ body {
 #login p {
    padding-left: 40px; 
    color: red;
+}
+
+/* ----------------- Weather ------------------*/
+
+#weather {    
+    width: 100%;    
+    padding-top: 5px;
+    padding-bottom: 5px;
+   /* background: rgba(255, 255, 255, 0.5); */
+    width: 100%;  
+}
+
+#weather table {
+    height: 40px;
+    float: right;
+    margin-left: auto;
+    margin-right: auto;
+    outline: orange solid px;
+}
+
+.background_wthr img {
+    padding-left: 10px;
+}
+
+.background_wthr h1 {
+    text-align: center;
+    font-size: 200%;  
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 10px;
+  /*  color: red; */
+  /*  color: #024779; */
+    color: #c96814;
 }

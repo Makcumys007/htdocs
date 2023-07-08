@@ -1,5 +1,6 @@
 <?php 
     
+    include 'admin/weather.php';
     include 'admin/connection.php';
 
    $result = mysqli_query($connection, "SELECT * FROM hse_info ORDER BY id DESC LIMIT 1;");
@@ -79,7 +80,7 @@ HEALTH AND SAFETY BOARD
                 <td class="num_g_p"><h4>Еңбекке қабілеттілігін жоғалтпаусыз күндер/ Дни без потери трудоспособности/ LTI free days</h4></td>
                 <td class="num_g"><h1><?php echo $smf;?></h1></td>
                 <td class="num_g_p"><h4>Қауіпсіз адам-сағат саны/ Безопасное количество человеко-часов/ Safe men-hours</h4></td>                
-                <td class="num_w"><h1><script>document.write(today);</script></h1></td>
+                <td class="num_w"><h1><?php echo $current_date;?></h1></td>
                 <td class="num_w_p"><h4>Күні Дата Date</h4></td>
               </tr>
             </table>
@@ -189,7 +190,40 @@ HEALTH AND SAFETY BOARD
                 </div>
             </div>
             <div id="center">
+                <div id="weather"> 
+                        <div class="background_wthr"> 
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="weather/<?php echo $desc_icon;?>" height="30" title="<?php echo $now_desc;?>">
+                                    </td>
+                                    <td>
+                                         <img src="weather/icons8-thermometer-80.png" height="30" >
+                                    </td>
+                                    <td>
+                                        <h1><?php echo $temperature; ?> °C</h1>
+                                    </td>
+                                    <td>
+                                         <img src="weather/icons8-wind-80.png" height="30" >
+                                    </td>
+                                    <td>
+                                        <h1><?php echo $wind; ?></h1>
+                                    </td>
+                                    <td>
+                                        <h1>m/s</h1>
+                                    </td>
+                                    <td>
+                                         <img src="weather/icons8-wet-80.png" height="30" >
+                                    </td>
+                                    <td>
+                                        <h1><?php echo $humidity; ?></h1>
+                                    </td>
+                                </tr>
+                            </table>
+                                
 
+                        </div>
+                </div>
                 <video id="video" controls loop autoplay muted>
                     <source src="<?php echo $file_3; ?>" type="video/mp4">
                 </video>              
